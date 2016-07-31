@@ -1,0 +1,12 @@
+@font-face {
+	src: url(../fonts/lb.otf) format('opentype');
+	font-family: 'LibreBaskerville';
+	font-style: italic;
+	font-weight: normal;
+}
+@font-face {
+	src: url(../fonts/ls.otf) format('opentype');
+	font-family: 'LeagueSpartan';
+	font-style: normal;
+	font-weight: normal;
+}

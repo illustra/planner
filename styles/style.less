@@ -1,0 +1,84 @@
+@import (css) "font.css";
+
+*:before, *::before, *:after, *::after { box-sizing: border-box; }
+html, body {
+	width: 100%;
+	margin: 0;
+}
+
+@accent: #26427b;
+
+body {
+	display: flex;
+	justify-content: center;
+	& > div {
+		text-align: center;
+		max-width: 500px;
+		width: 100%;
+		margin: 2em;
+
+		#download {
+			padding: 2em 0;
+			a {
+				font-family: 'LeagueSpartan';
+				text-decoration: none;
+				padding: 1.2em .6em 1em 1em;
+				border: 2px solid black;
+				-webkit-transition: all .6s ease;
+				-moz-transition: all .6s ease;
+				-o-transition: all .6s ease;
+				transition: all .6s ease;
+				color: black;
+				text-transform: uppercase;
+				font-size: .8em;
+				letter-spacing: .4em;
+				&:hover {
+					padding: 1.7em 1.1em 1.5em 1.5em;
+					color: white;
+					background: @accent;
+					border-color: @accent;
+				}
+			}
+		}
+
+		img.logo {
+			width: 300px;
+			margin: 0 auto;
+		}
+		img.demo {
+			width: 100%;
+			margin: 1.5em 0 1em;
+		}
+
+		h1, h2, p {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		h1, h2 {
+			font-family: 'LeagueSpartan';
+			margin: 1.5em 0;
+			letter-spacing: .3em;
+			word-spacing: .5em;
+			text-transform: uppercase;
+		}
+		p {
+			font-family: 'LibreBaskerville', serif;
+			font-style: italic;
+			font-size: 1.2em;
+			line-height: 1.7em;
+			vertical-align: middle;
+
+			a {
+				text-decoration: none;
+				color: black;
+				font-weight: normal;
+				border-bottom: 1px solid black;
+				padding-bottom: .2em;
+				&:hover {
+					color: @accent;
+					border-color: @accent;
+				}
+			}
+		}
+	}
+}
